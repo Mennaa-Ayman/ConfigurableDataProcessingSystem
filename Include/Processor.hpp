@@ -5,23 +5,46 @@
 #include <fstream>
 
 class Processor{
+    protected:
+        std::string type;
+        float threshold;
+        int maxRetries;
+
     public:
-        virtual ~Processor() = default;
-        virtual void process(const std::string& data)=0;
-        virtual std::string getType() const =0;
+        Processor(const std::string& type="", float threshold=0, int maxRetries =0);
+        std::string getType();
+        float getThreshold();
+        int getMaxRetries();
+        virtual ~Processor();
+        virtual void displayType() const = 0;
 };
 
 class TextProcessor : public Processor{
     public:
-        void process(const std:: string& data) override;
+        TextProcessor(const std::string& type="", float threshold=0, int MaxRetries =0);
+        virtual ~TextProcessor();
+        void displayType() const override;
 };
+
+class NumericProcessor : public Processor{
+    public:
+        NumericProcessor(const std::string& type="", float threshold=0, int MaxRetries =0);
+        virtual ~NumericProcessor();
+        void displayType() const override;
+};
+
 class ImageProcessor : public Processor{
     public:
-        void process(const std:: string& data) override;    
+        ImageProcessor(const std::string& type="", float threshold=0, int MaxRetries =0);
+        virtual ~ImageProcessor();
+        void displayType() const override;
 };
+
 class AudioProcessor : public Processor{
     public:
-        void process(const std:: string& data) override;    
+        AudioProcessor(const std::string& type="", float threshold=0, int MaxRetries =0);
+        virtual ~AudioProcessor();
+        void displayType() const override;
 };
 
 #endif
