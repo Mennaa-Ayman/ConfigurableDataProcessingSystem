@@ -24,5 +24,11 @@ Each processor has the following attributes:
 ### 3. Factory Design Pattern
 The ProcessorFactory class creates the appropriate processor type based on the configuration options passed at runtime.
 
+### 4.Template-Based Processing: 
+Demonstrates the use of templates to process collections of data generically. 
+
+### 5. Exception Handling
+Provides robust error handling for invalid configurations, missing files, or unsupported processor types. 
+
 ## Conclusion
 This project demonstrates how to build a modular and extensible system in C++ using object-oriented principles like inheritance, polymorphism, and the factory design pattern. The system can easily be extended to support additional data types, making it a flexible solution for processing different kinds of data based on user configuration.
