@@ -30,5 +30,12 @@ Demonstrates the use of templates to process collections of data generically.
 ### 5. Exception Handling
 Provides robust error handling for invalid configurations, missing files, or unsupported processor types. 
 
+## Compilation and detection
+1- To Compile 
+`g++ -o ConfigrableProcessing main.cpp Configuration.cpp Processor.cpp ProcessorFactory.cpp`
+
+2- To run 
+`./ConfigrableProcessing.exe`
+
 ## Conclusion
 This project demonstrates how to build a modular and extensible system in C++ using object-oriented principles like inheritance, polymorphism, and the factory design pattern. The system can easily be extended to support additional data types, making it a flexible solution for processing different kinds of data based on user configuration.
