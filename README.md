@@ -1,7 +1,7 @@
 # Configurable-Data-Processing-System ⚙️
 
 ## Overview: 
-This project is a sophisticated C++ application designed to enhance your understanding of core C++ concepts, including **Object-Oriented Programming ,STL, Templates, File Handling, and Exception Handling.** The application focuses on creating a dynamic and extensible system for processing different 
+This project is a C++ application demonstrating C++ concepts, including **Object-Oriented Programming ,STL, Templates, File Handling, and Exception Handling.** The application focuses on creating a dynamic and extensible system for processing different 
 types of data based on user-provided configuration files. 
 
 ## Main Features:
